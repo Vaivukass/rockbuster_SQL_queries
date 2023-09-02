@@ -27,4 +27,4 @@ JOIN city ON country.country_id = city.country_id
 JOIN address ON city.city_id = address.city_id
 JOIN customer ON address.address_id = customer.address_id
 LEFT JOIN top_5_customers_cte ON customer.customer_id = top_5_customers_cte.customer_id
-GROUP BY  country.country
+GROUP BY  country.country;
