@@ -13,12 +13,12 @@ The analysis has been done querying a relational database, containing data on fi
 - Excel
 - Gamma.app
 ## Key Competencies
--**Data Cleansing**: Conducted data cleaning operations, addressing issues such as duplicates, inconsistent data formats, and handling missing values.
+- **Data Cleansing**: Conducted data cleaning operations, addressing issues such as duplicates, inconsistent data formats, and handling missing values.
 
--**Table Integration**: Strategically determined join types and order to optimize computational efficiency during table integration processes.
+- **Table Integration**: Strategically determined join types and order to optimize computational efficiency during table integration processes.
 
--**Exploratory Data Analysis**: Utilized basic descriptive statistics like maximum, minimum, mean, or mode for variable insights, while employing GROUP BY and ORDER BY clauses to address more complex analytical queries.
+- **Exploratory Data Analysis**: Utilized basic descriptive statistics like maximum, minimum, mean, or mode for variable insights, while employing GROUP BY and ORDER BY clauses to address more complex analytical queries.
 
--**Common Table Expressions (CTEs)**: Developed Common Table Expressions (CTEs) to enhance code readability and facilitate code reusability.
+- **Common Table Expressions (CTEs)**: Developed Common Table Expressions (CTEs) to enhance code readability and facilitate code reusability.
 
--**Results Presentation**: Compiled findings and recommendations into a cohesive Powerpoint presentation, effectively answering key project questions and providing actionable insights.
+- **Results Presentation**: Compiled findings and recommendations into a cohesive Powerpoint presentation, effectively answering key project questions and providing actionable insights.
