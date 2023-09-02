@@ -1,11 +1,11 @@
 -- The below CTE extracts data about how many of the top 5 customers are based within each country
 WITH top_5_customers_cte (customer_id, first_name, last_name, country, city, total_amount_paid) AS
 (SELECT customer.customer_id,
-		    customer.first_name,
-	    	customer.last_name,
-	    	country.country,
-	    	city.city,
-	    	SUM(payment.amount) AS total_amount_paid
+	customer.first_name,
+	customer.last_name,
+	country.country,
+	city.city,
+	SUM(payment.amount) AS total_amount_paid
 FROM payment 
 INNER JOIN customer ON payment.customer_id = customer.customer_id
 INNER JOIN address ON customer.address_id = address.address_id
@@ -13,15 +13,15 @@ INNER JOIN city ON address.city_id = city.city_id
 INNER JOIN country ON city.country_id = country.country_id
 WHERE city IN ('Aurora', 'Cape Coral', 'Tanza', 'Santa Brbara sOeste', 'Balikesir', 'Shimonoseki', 'Tanauan', 'Bijapur', 'Liaocheng', 'Fuyu') 
 GROUP BY customer.customer_id,
-		     customer.first_name,
-		     customer.last_name,
-		     country.country,
-		     city.city
+	 customer.first_name,
+	 customer.last_name,
+	 country.country,
+	 city.city
 ORDER BY SUM(payment.amount) DESC
 LIMIT 5)
 SELECT  country.country,
-	    	COUNT(DISTINCT customer.customer_id) AS all_customer_count,
-	    	COUNT(DISTINCT top_5_customers_cte.customer_id) AS top_customer_count
+	COUNT(DISTINCT customer.customer_id) AS all_customer_count,
+	COUNT(DISTINCT top_5_customers_cte.customer_id) AS top_customer_count
 FROM country
 JOIN city ON country.country_id = city.country_id
 JOIN address ON city.city_id = address.city_id
