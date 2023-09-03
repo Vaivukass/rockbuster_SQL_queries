@@ -19,6 +19,6 @@ The analysis has been done querying a relational database, containing data on fi
 
 - **Exploratory Data Analysis**: Utilized basic descriptive statistics like maximum, minimum, mean, or mode for variable insights, while employing GROUP BY and ORDER BY clauses to address more complex analytical queries.
 
-- **Common Table Expressions (CTEs)**: Developed Common Table Expressions (CTEs) to enhance code readability and facilitate code reusability.
+- **Common Table Expressions (CTEs) & Subqueries**: Developed Subqueries and recreted them using Common Table Expressions (CTEs) to enhance code readability and facilitate code reusability.
 
-- **Results Presentation**: Compiled findings and recommendations into a cohesive Powerpoint presentation, effectively answering key project questions and providing actionable insights.
+- **Results Presentation**: Compiled findings and recommendations into a cohesive presentation, effectively answering key project questions and providing actionable insights.
